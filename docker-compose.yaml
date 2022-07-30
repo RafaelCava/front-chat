@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  front-chat:
+    build:
+      context: .
+      dockerfile: ./.docker/config/Dockerfile
+    entrypoint: ./.docker/entrypoint.sh
+    ports:
+     - 8080:8080
+    container_name: front-chat
+    volumes:
+      - .:/usr/front-chat/app
+    networks:
+     - portfolio
+networks:
+  portfolio:
+    driver: bridge
+
+
