@@ -30,7 +30,6 @@
 import { defineAsyncComponent, defineComponent, ref } from 'vue'
 import { TypeActions } from '@/store/enum/type-actions'
 import { useStore } from '../store/index'
-
 export default defineComponent({
   name: 'FormSignUp',
   components: {
