@@ -6,22 +6,22 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent, defineComponent } from "vue";
+import { defineAsyncComponent, defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "HomeView",
-  data() {
+  name: 'HomeView',
+  data () {
     return {
-      handleSubmit: false,
-    };
+      handleSubmit: false
+    }
   },
   components: {
     FormSignUp: defineAsyncComponent(
-      () => import("../components/FormSignUp.vue")
+      () => import('../components/FormSignUp.vue')
     ),
     FormSignIn: defineAsyncComponent(
-      () => import("../components/FormSignIn.vue")
-    ),
-  },
-});
+      () => import('../components/FormSignIn.vue')
+    )
+  }
+})
 </script>

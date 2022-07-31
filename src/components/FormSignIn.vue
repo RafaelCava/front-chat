@@ -17,7 +17,7 @@
         <label for="password">Insira sua senha</label>
       </span>
       <div class="container-button">
-        <Button @click="handleSignIn" label="login" class="p-button-primary" />
+        <ButtonPrime @click="handleSignIn" label="login" class="p-button-primary" />
         <span @click="$emit('signUp')" class="link-signup"
           >Deseja se cadastrar ?</span
         >
@@ -27,32 +27,30 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent, defineComponent, ref } from "vue";
-import { TypeActions } from "@/store/enum/type-actions";
-import { useStore } from "../store/index";
-
+import { defineAsyncComponent, defineComponent, ref } from 'vue'
+import { TypeActions } from '@/store/enum/type-actions'
+import { useStore } from '../store/index'
 export default defineComponent({
-  name: "FormSignUp",
+  name: 'FormSignUp',
   components: {
-    InputText: defineAsyncComponent(() => import("primevue/inputtext")),
-    Password: defineAsyncComponent(() => import("primevue/password")),
-    Button: defineAsyncComponent(() => import("primevue/button")),
+    InputText: defineAsyncComponent(() => import('primevue/inputtext')),
+    Password: defineAsyncComponent(() => import('primevue/password')),
+    ButtonPrime: defineAsyncComponent(() => import('primevue/button'))
   },
-  setup() {
-    const store = useStore();
-    const email = ref("");
-    const password = ref("");
+  setup () {
+    const store = useStore()
+    const email = ref('')
+    const password = ref('')
     return {
-      handleSignIn: () =>
-        store.dispatch(TypeActions.LOGIN, {
-          email: email.value,
-          password: password.value,
-        }),
+      handleSignIn: () => store.dispatch(TypeActions.LOGIN, {
+        email: email.value,
+        password: password.value
+      }),
       email,
-      password,
-    };
-  },
-});
+      password
+    }
+  }
+})
 </script>
 
 <style scoped>
