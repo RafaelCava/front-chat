@@ -65,7 +65,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Jest](https://jestjs.io/pt-BR/)
 - [Jest](https://jestjs.io/pt-BR/)
 - [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
 - [Commitizen](https://github.com/commitizen/cz-cli)
