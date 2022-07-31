@@ -63,7 +63,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Socket.io](https://socket.io/)
 - [Nginx](https://www.nginx.com/)
 - [Jest](https://jestjs.io/pt-BR/)
-- [Jest](https://jestjs.io/pt-BR/)
 - [Eslint](https://eslint.org/)
 - [Husky](https://typicode.github.io/husky/)
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
