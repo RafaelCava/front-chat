@@ -7,8 +7,7 @@
     },
     "extends": [
         "plugin:vue/essential",
-        "airbnb-base",
-        "prettier"
+        "standard"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -17,14 +16,8 @@
     },
     "plugins": [
         "vue",
-        "@typescript-eslint",
-        "prettier"
+        "@typescript-eslint"
     ],
     "rules": {
-      "prettier/prettier": "error",
-      "import/no-unresolved": "off",
-      "import/extensions": "off",
-      "no-param-reassign": "off",
-      "no-shadow": "off"
     }
 }

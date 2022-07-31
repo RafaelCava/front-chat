@@ -42,39 +42,39 @@
         <label for="password">Insira sua senha</label>
       </span>
       <div class="container-button">
-        <Button
+        <ButtonPrime
           @click="$emit('cancel')"
           label="Cancelar"
           class="p-button-danger"
         />
-        <Button label="Cadastrar" class="p-button-success" />
+        <ButtonPrime label="Cadastrar" class="p-button-success" />
       </div>
     </form>
   </div>
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent, defineComponent } from "vue";
+import { defineAsyncComponent, defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "FormSignUp",
-  data() {
+  name: 'FormSignUp',
+  data () {
     return {
       user: {
-        nome: "",
-        email: "",
-        password: "",
+        nome: '',
+        email: '',
+        password: ''
       },
-      validationEmail: "",
-    };
+      validationEmail: ''
+    }
   },
   components: {
-    InputText: defineAsyncComponent(() => import("primevue/inputtext")),
-    Password: defineAsyncComponent(() => import("primevue/password")),
-    Divider: defineAsyncComponent(() => import("primevue/divider")),
-    Button: defineAsyncComponent(() => import("primevue/button")),
-  },
-});
+    InputText: defineAsyncComponent(() => import('primevue/inputtext')),
+    Password: defineAsyncComponent(() => import('primevue/password')),
+    Divider: defineAsyncComponent(() => import('primevue/divider')),
+    ButtonPrime: defineAsyncComponent(() => import('primevue/button'))
+  }
+})
 </script>
 
 <style scoped>
