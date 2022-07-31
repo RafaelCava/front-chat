@@ -27,8 +27,8 @@
 </template>
 
 <script lang="ts">
+import { defineAsyncComponent, defineComponent, ref } from "vue";
 import { TypeActions } from "@/store/enum/type-actions";
-import { defineAsyncComponent, defineComponent, ref } from "@vue/runtime-core";
 import { useStore } from "../store/index";
 
 export default defineComponent({
