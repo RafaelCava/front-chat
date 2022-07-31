@@ -54,8 +54,21 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 - [Vue3](https://vuejs.org/)
-- [docker](https://www.docker.com/)
+- [Vuex](https://vuex.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [PrimeVUE](https://www.primefaces.org/primevue/)
+- [Docker](https://www.docker.com/)
+- [Socket.io](https://socket.io/)
+- [Nginx](https://www.nginx.com/)
+- [Jest](https://jestjs.io/pt-BR/)
+- [Jest](https://jestjs.io/pt-BR/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/)
+- [Commitlint](https://github.com/conventional-changelog/commitlint)
+- [Commitizen](https://github.com/commitizen/cz-cli)
 
 ## :white_check_mark: Pré requisitos ##
 
@@ -76,11 +89,13 @@ $ yarn
 # Para iniciar o projeto
 $ yarn start
 
-# O app vai inicializar em <http://localhost:3000>
+# O app vai inicializar em <http://localhost:8080>
 
 ## Caso prefira usar docker
 
 $ docker-compose up -d
+# O app vai inicializar em <http://localhost:8080>
+
 ```
 
 ## :memo: Licença ##
