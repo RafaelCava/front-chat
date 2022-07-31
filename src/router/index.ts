@@ -1,11 +1,10 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
-import Login from "../views/Login.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "login",
-    component: Login,
+    component: () => import("@/views/Login.vue"),
   },
 ];
 
