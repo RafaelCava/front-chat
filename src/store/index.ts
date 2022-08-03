@@ -28,18 +28,25 @@ export default createStore<State>({
     }
   },
   mutations: {
-    [TypeMutations.SET_USER] (state, { user, token }) {
+    [TypeMutations.SET_USER] (state, { user }) {
       state.user = user
+    },
+    [TypeMutations.SET_TOKEN] (state, token) {
       state.token = token
     }
   },
   actions: {
     [TypeActions.LOGIN] ({ commit }, user) {
-      http.post('/login', user).then((response) => {
+      http.post('auth/login', user).then((response) => {
         commit(TypeMutations.SET_USER, {
-          user: response.data.user,
-          token: response.data.token
+          user: response.data.user
         })
+        commit(TypeMutations.SET_TOKEN, response.data.token)
+      })
+    },
+    [TypeActions.SIGNUP] ({ commit }, user) {
+      http.post('/user', user).then((response) => {
+        return response.data
       })
     }
   },

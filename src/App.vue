@@ -1,6 +1,21 @@
 <template>
-  <router-view />
+  <div>
+    <Toast />
+    <router-view />
+  </div>
 </template>
+
+<script lang="ts" setup>
+import { defineComponent } from 'vue'
+import Toast from 'primevue/toast'
+
+defineComponent({
+  name: 'AppBootstrap',
+  components: {
+    Toast
+  }
+})
+</script>
 
 <style>
 * {

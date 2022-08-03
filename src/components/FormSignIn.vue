@@ -56,7 +56,7 @@ export default defineComponent({
 <style scoped>
 .form {
   width: 100%;
-  max-width: 350px;
+  max-width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
