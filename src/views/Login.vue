@@ -6,15 +6,10 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent, defineComponent } from 'vue'
+import { defineAsyncComponent, defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'HomeView',
-  data () {
-    return {
-      handleSubmit: false
-    }
-  },
   components: {
     FormSignUp: defineAsyncComponent(
       () => import('../components/FormSignUp.vue')
@@ -22,6 +17,12 @@ export default defineComponent({
     FormSignIn: defineAsyncComponent(
       () => import('../components/FormSignIn.vue')
     )
+  },
+  setup () {
+    const handleSubmit = ref(false)
+    return {
+      handleSubmit
+    }
   }
 })
 </script>

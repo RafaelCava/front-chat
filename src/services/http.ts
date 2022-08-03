@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { URL_API } from '../configs/constants'
 
 export default axios.create({
-  baseURL: 'http://localhost:3000/',
+  baseURL: URL_API,
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json'
